@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.eonservice.DiagnosisActivity"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/back_img_diagnosis"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Initial Diagnosis"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:id="@+id/ly_1">
+
+        <TextView
+            android:id="@+id/cpu_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="3dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="18sp"
+            android:text="CPU" />
+
+        <EditText
+            android:id="@+id/cpu_input"
+            android:layout_below="@id/cpu_label"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/form_shape"
+            android:hint="Insert value issue"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular" />
+
+        <TextView
+            android:id="@+id/ram_label"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cpu_input"
+            android:text="RAM"
+            android:paddingStart="3dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/ram_input"
+            android:layout_below="@id/ram_label"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/form_shape"
+            android:hint="Insert value issue"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular" />
+
+        <TextView
+            android:id="@+id/hard_disk_label"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ram_input"
+            android:text="Hard Disk"
+            android:paddingStart="3dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/hard_disk_input"
+            android:layout_below="@id/hard_disk_label"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/form_shape"
+            android:hint="Insert value issue"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/diagnose_button"
+        android:layout_below="@id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:text="Diagnose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shape"
+        android:width="300dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold"/>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="344dp"
+        android:layout_height="181dp"
+        android:layout_below="@id/diagnose_button"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/form_shape"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Here's the result"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

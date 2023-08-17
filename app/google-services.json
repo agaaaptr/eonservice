@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "768781337793",
+    "project_id": "eonservice-e3c94",
+    "storage_bucket": "eonservice-e3c94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768781337793:android:841067d9f2f9ac98b08040",
+        "android_client_info": {
+          "package_name": "com.example.eonservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768781337793-524frj96hdu10e41p5n34n0a8cv8osj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChSwBJHSip2g-GAV3yLjh-TQDMEVZk_S8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768781337793-524frj96hdu10e41p5n34n0a8cv8osj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

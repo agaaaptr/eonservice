@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceActivity"
+    android:background="@color/background">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/back_img2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Service Device"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black" />
+
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:id="@+id/ly_1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_brand"
+            android:paddingStart="3dp"
+            android:text="Brand"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/form_shape"
+            android:hint="What's your laptop brand?"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/form_brand"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_series"
+            android:paddingTop="10dp"
+            android:paddingStart="3dp"
+            android:text="Series"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/form_shape"
+            android:hint="What's your laptop series?"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/form_series"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_problem"
+            android:paddingTop="10dp"
+            android:paddingStart="3dp"
+            android:text="Device Problem"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/form_shape"
+            android:hint="Tell us what happens?"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingBottom="140dp"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/form_problem"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Place order"
+        android:layout_below="@id/ly_1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:width="300dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:id="@+id/btn_order"
+        android:fontFamily="@font/poppinsbold"/>
+
+</RelativeLayout>
