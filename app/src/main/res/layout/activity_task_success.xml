@@ -54,6 +54,7 @@
         android:layout_centerHorizontal="true"
         android:width="300dp"
         android:text="Back"
+        android:textAllCaps="false"
         android:background="@drawable/button_shape"
         android:textColor="@color/white"
         android:textSize="14dp"

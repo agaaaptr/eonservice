@@ -30,8 +30,6 @@ class HomeActivity : AppCompatActivity() {
         binding.btmNavbar.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.nav_home -> replaceFragment(Home())
-                R.id.nav_order -> replaceFragment(Order())
-                R.id.nav_chat -> replaceFragment(Chat())
                 R.id.nav_profile -> replaceFragment(com.example.eonservice.Profile())
 
                 else ->{
