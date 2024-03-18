@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="15dp"
-        android:text="Initial Diagnosis"
+        android:text="Diagnosa Awal"
         android:textSize="18dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinssemibold"
@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/form_shape"
-            android:hint="Insert value issue"
+            android:hint="Masukkan nilai masalah"
             android:backgroundTint="@color/white"
             android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular" />
@@ -73,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/form_shape"
-            android:hint="Insert value issue"
+            android:hint="Masukkan nilai masalah"
             android:backgroundTint="@color/white"
             android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular" />
@@ -97,7 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/form_shape"
-            android:hint="Insert value issue"
+            android:hint="Masukkan nilai masalah"
             android:backgroundTint="@color/white"
             android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
@@ -111,7 +111,7 @@
         android:id="@+id/diagnose_button"
         android:layout_below="@id/ly_1"
         android:layout_centerHorizontal="true"
-        android:text="Diagnose"
+        android:text="Diagnosa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -134,11 +134,11 @@
         android:background="@drawable/form_shape"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/poppinsregular"
-        android:hint="Here's the result"
+        android:hint="Masukkan nilai masalah dengan range 1-10, semakin berat masalahnya semakin tinggi nilainya. Contoh: CPU mengalami overheat, dan harddisk lemot, maka CPU = 7, Harddisk = 5, RAM = 3."
         android:paddingLeft="15dp"
         android:paddingTop="15dp"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="17sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

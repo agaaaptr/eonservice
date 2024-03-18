@@ -22,7 +22,7 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinssemibold"
         android:paddingTop="15dp"
-        android:text="Transaction History"
+        android:text="Riwayat Transaksi"
         android:textColor="@color/black"
         android:textSize="18dp" />
 

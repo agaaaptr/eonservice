@@ -62,19 +62,19 @@ class ServiceActivity : AppCompatActivity() {
         val series = edtSeries.text.toString()
 
         if (brand.isEmpty()){
-            edtBrand.error = "Please enter laptop brand"
+            edtBrand.error = "Mohon masukkan merek laptop"
             edtBrand.requestFocus()
             return
         }
 
         if (series.isEmpty()){
-            edtSeries.error = "Please enter laptop series"
+            edtSeries.error = "Mohon masukkan seri laptop"
             edtSeries.requestFocus()
             return
         }
 
         if (problem.isEmpty()){
-            edtProblem.error = "Please enter your problem"
+            edtProblem.error = "Mohon beritahu permasalahan laptop"
             edtProblem.requestFocus()
             return
         }

@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/Register_img_1"
-        android:text="Welcome!"
+        android:text="Selamat datang!"
         android:textSize="18dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinssemibold"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/R_txt_1"
-        android:text="Let's help you repair your device!"
+        android:text="Ayo kita bantu memperbaiki perangkat Anda!"
         android:textSize="12dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinsregular"
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/button_shape"
-            android:hint="Enter your email"
+            android:hint="Masukkan email"
             android:backgroundTint="@color/white"
             android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/button_shape"
-            android:hint="Create password"
+            android:hint="Buat password"
             android:backgroundTint="@color/white"
             android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
@@ -106,7 +106,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have an account? "
+            android:text="Sudah punya akun? "
             android:fontFamily="@font/poppinsregular"
             android:textSize="12dp"/>
 
@@ -116,7 +116,7 @@
             android:fontFamily="@font/poppinssemibold"
             android:textSize="12dp"
             android:textColor="@color/secondaryColor"
-            android:text="Sign In"
+            android:text="Masuk"
             android:id="@+id/txt_login"/>
 
 

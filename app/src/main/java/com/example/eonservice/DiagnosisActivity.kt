@@ -61,17 +61,17 @@ class DiagnosisActivity : AppCompatActivity() {
         val average = (cpuValue + ramValue + hardDiskValue) / 3
 
         return when {
-            cpuValue == ramValue && cpuValue == hardDiskValue -> "Since the value is the same, all the components may have issues, but the CPU is more possible"
-            average > 3 && cpuValue == ramValue && cpuValue == hardDiskValue -> "Since the value is the same, all the components may have issues, but the CPU is more possible"
-            cpuValue > hardDiskValue && cpuValue > ramValue -> "Device has CPU issues"
-            hardDiskValue > cpuValue && hardDiskValue > ramValue -> "Device has Hard Disk issues"
-            ramValue > cpuValue && ramValue > hardDiskValue -> "Device has RAM issues"
-            average > 3 && cpuValue == hardDiskValue -> "Device has CPU issues"
-            average > 3 && hardDiskValue == ramValue -> "Device has Hard Disk issues"
-            average > 3 && cpuValue == ramValue -> "Device has CPU issues"
-            average > 10 -> "The average value is more than 10, all the components may have same valuable critical issues"
+            cpuValue == ramValue && cpuValue == hardDiskValue -> "Karena nilainya sama, semua komponen mungkin bermasalah, tetapi CPU lebih mungkin"
+            average > 3 && cpuValue == ramValue && cpuValue == hardDiskValue -> "Karena nilainya sama, semua komponen mungkin bermasalah, tetapi CPU lebih mungkin"
+            cpuValue > hardDiskValue && cpuValue > ramValue -> "Perangkat mengalami masalah CPU"
+            hardDiskValue > cpuValue && hardDiskValue > ramValue -> "Perangkat mengalami masalah Hard Disk"
+            ramValue > cpuValue && ramValue > hardDiskValue -> "Perangkat mengalami masalah RAM"
+            average > 3 && cpuValue == hardDiskValue -> "Perangkat mengalami masalah CPU"
+            average > 3 && hardDiskValue == ramValue -> "Perangkat mengalami masalah Hard Disk"
+            average > 3 && cpuValue == ramValue -> "Perangkat mengalami masalah CPU"
+            average > 10 -> "Nilai rata-ratanya lebih dari 10, semua komponen mungkin mempunyai nilai permasalahan kritis yang sama"
 
-            else -> "Unknown issue"
+            else -> "Masalah tidak diketahui"
         }
     }
 

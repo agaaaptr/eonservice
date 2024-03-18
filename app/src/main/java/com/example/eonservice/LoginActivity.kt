@@ -24,19 +24,19 @@ class LoginActivity : AppCompatActivity() {
             val password = L_edt_password.text.toString().trim()
 
             if (email.isEmpty()){
-                L_edt_email.error = "Email can not be empty!"
+                L_edt_email.error = "Email tidak boleh kosong!"
                 L_edt_email.requestFocus()
                 return@setOnClickListener
             }
 
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                L_edt_email.error = "Email is not valid"
+                L_edt_email.error = "Email tidak valid"
                 L_edt_email.requestFocus()
                 return@setOnClickListener
             }
 
             if (password.isEmpty() || password.length < 6){
-                L_edt_password.error = "Password must be more than 6 characters!"
+                L_edt_password.error = "Password harus lebih dari 6 karakter!"
                 L_edt_password.requestFocus()
                 return@setOnClickListener
             }

@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/Login_img_1"
-        android:text="Welcome Back!"
+        android:text="Selamat datang kembali!"
         android:textSize="18dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinssemibold"
@@ -55,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/button_shape"
-            android:hint="Enter your email"
+            android:hint="Masukkan email"
             android:backgroundTint="@color/white"
             android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/button_shape"
-            android:hint="Enter your password"
+            android:hint="Masukkan password"
             android:backgroundTint="@color/white"
             android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
@@ -100,7 +100,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Not have an account yet? "
+            android:text="Belum punya akun? "
             android:fontFamily="@font/poppinsregular"
             android:textSize="12dp"/>
 
@@ -110,7 +110,7 @@
             android:fontFamily="@font/poppinssemibold"
             android:textSize="12dp"
             android:textColor="@color/secondaryColor"
-            android:text="Sign Up"
+            android:text="Buat akun"
             android:id="@+id/txt_register"/>
 
 

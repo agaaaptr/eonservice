@@ -5,7 +5,7 @@
     <string name="hello">Hello</string>
     <string name="aga">Aga</string>
     <string name="search">Search</string>
-    <string name="service_device">Service Device</string>
-    <string name="initial_diagnosis">Initial Diagnosis</string>
+    <string name="service_device">Service Perangkat</string>
+    <string name="initial_diagnosis">Diagnosa Awal</string>
     <string name="reference">Reference</string>
 </resources>

@@ -23,14 +23,13 @@ class HomeActivity : AppCompatActivity() {
 
         serviceDeviceListener()
         initialDiagnosisListener()
-        referenceListener()
         settingsListener()
         historyListener()
 
         binding.btmNavbar.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.nav_home -> replaceFragment(Home())
-                R.id.nav_profile -> replaceFragment(com.example.eonservice.Profile())
+
 
                 else ->{
 
@@ -53,11 +52,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
 
-    private fun referenceListener() {
-        layout_reference.setOnClickListener {
-            startActivity(Intent(this, ReferenceActivity::class.java))
-        }
-    }
+
 
     private fun initialDiagnosisListener() {
         layout_diagnosis.setOnClickListener {
