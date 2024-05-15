@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="15dp"
         android:text="Diagnosa Awal"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/black" />
@@ -49,9 +49,10 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@drawable/form_shape"
+            android:textSize="16sp"
             android:hint="Masukkan nilai masalah"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:fontFamily="@font/poppinsregular" />
 
         <TextView
@@ -72,10 +73,11 @@
             android:layout_marginTop="2dp"
             android:layout_width="match_parent"
             android:layout_height="57dp"
+            android:textSize="16sp"
             android:background="@drawable/form_shape"
             android:hint="Masukkan nilai masalah"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:fontFamily="@font/poppinsregular" />
 
         <TextView
@@ -95,11 +97,12 @@
             android:inputType="numberDecimal"
             android:layout_marginTop="2dp"
             android:layout_width="match_parent"
+            android:textSize="16sp"
             android:layout_height="57dp"
             android:background="@drawable/form_shape"
             android:hint="Masukkan nilai masalah"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:fontFamily="@font/poppinsregular"
             />
 
@@ -118,13 +121,13 @@
         android:background="@drawable/button_shape"
         android:width="300dp"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:fontFamily="@font/poppinsbold"/>
 
     <TextView
         android:id="@+id/result_text"
-        android:layout_width="344dp"
-        android:layout_height="185dp"
+        android:layout_width="345dp"
+        android:layout_height="170dp"
         android:layout_below="@id/diagnose_button"
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
@@ -132,9 +135,8 @@
         android:background="@drawable/form_shape"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/poppinsregular"
-        android:hint="Masukkan nilai masalah dengan range 1-10, semakin berat masalahnya semakin tinggi nilainya. Contoh: CPU mengalami overheat, dan harddisk lemot, maka CPU = 7, Harddisk = 5, RAM = 3."
-        android:paddingLeft="15dp"
-        android:paddingTop="15dp"
+        android:hint="Masukkan nilai masalah dengan range 1-10, semakin berat masalahnya semakin tinggi nilainya. Contoh: CPU mengalami overheat, dan harddisk lemot, maka CPU = 7, Harddisk = 5, RAM = 3 (masalah ringan)."
+        android:padding="15dp"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         android:textColorHint="@color/black"
@@ -146,17 +148,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/result_text"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginTop="20dp"
         android:width="300dp"
         android:background="@drawable/button_shape"
         android:fontFamily="@font/poppinsbold"
         android:text="Salin Teks"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
 </RelativeLayout>

@@ -57,7 +57,8 @@
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="140dp"
+                android:layout_below="@+id/layout_header"
+                android:layout_marginTop="72dp"
                 android:overScrollMode="never"
                 android:scrollbars="none">
 
@@ -78,7 +79,8 @@
                         app:layout_constraintDimensionRatio="H, 1:1"
                         app:layout_constraintEnd_toStartOf="@id/layout_diagnosis"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/layout_history">
 
                         <ImageView
                             android:layout_width="100dp"
@@ -112,7 +114,8 @@
                         app:layout_constraintDimensionRatio="H, 1:1"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/layout_service"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/layout_chat">
 
                         <ImageView
                             android:layout_width="100dp"
@@ -133,8 +136,8 @@
 
                     </LinearLayout>
 
-                  <!--  <LinearLayout
-                        android:id="@+id/layout_reference"
+                    <LinearLayout
+                        android:id="@+id/layout_chat"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="22dp"
@@ -143,10 +146,11 @@
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintDimensionRatio="H, 1:1"
-                        app:layout_constraintEnd_toStartOf="@id/layout_diagnosis"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/layout_service">
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/layout_history"
+                        app:layout_constraintTop_toBottomOf="@+id/layout_diagnosis">
 
                         <ImageView
                             android:layout_width="100dp"
@@ -154,18 +158,18 @@
                             android:layout_margin="8dp"
                             android:contentDescription="@string/app_name"
                             android:padding="8dp"
-                            android:src="@drawable/reference" />
+                            android:src="@drawable/chatwa" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppinsbold"
                             android:gravity="center"
-                            android:text="@string/reference"
+                            android:text="@string/chat"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
-                    </LinearLayout> -->
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/layout_history"
@@ -177,10 +181,13 @@
                         android:gravity="center"
                         android:orientation="vertical"
                         android:padding="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintDimensionRatio="H, 1:1"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/layout_chat"
+                        app:layout_constraintHorizontal_bias="0.092"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/layout_diagnosis">
+                        app:layout_constraintTop_toBottomOf="@+id/layout_service"
+                        app:layout_constraintVertical_bias="0.0">
 
                         <ImageView
                             android:layout_width="100dp"

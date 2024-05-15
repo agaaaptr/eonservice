@@ -27,7 +27,7 @@
             android:exported="false">
         </activity>
         <activity
-            android:name=".ReferenceActivity"
+            android:name=".ChatActivity"
             android:exported="false">
         </activity>
         <activity

@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/Register_img_1"
         android:text="Selamat datang!"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/black"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/R_txt_1"
         android:text="Ayo kita bantu memperbaiki perangkat Anda!"
-        android:textSize="12dp"
+        android:textSize="14sp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinsregular"
         android:textColor="@color/black"
@@ -62,7 +62,8 @@
             android:background="@drawable/button_shape"
             android:hint="Masukkan email"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
+            android:textSize="16sp"
             android:fontFamily="@font/poppinsregular"
             android:id="@+id/R_edt_email"/>
 
@@ -71,10 +72,11 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="57dp"
+            android:textSize="16sp"
+            android:padding="15dp"
             android:background="@drawable/button_shape"
             android:hint="Buat password"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
             android:id="@+id/R_edt_password"/>
 
@@ -91,7 +93,7 @@
         android:background="@drawable/button_shape"
         android:width="300dp"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:id="@+id/R_btn_1"
         android:fontFamily="@font/poppinsbold"/>
 

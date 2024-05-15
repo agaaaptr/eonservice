@@ -25,6 +25,7 @@ class HomeActivity : AppCompatActivity() {
         initialDiagnosisListener()
         settingsListener()
         historyListener()
+        chatListener()
 
         binding.btmNavbar.setOnItemSelectedListener {
             when(it.itemId){
@@ -52,7 +53,11 @@ class HomeActivity : AppCompatActivity() {
     }
 
 
-
+    private fun chatListener() {
+        layout_chat.setOnClickListener {
+            startActivity(Intent(this, ChatActivity::class.java))
+        }
+    }
 
     private fun initialDiagnosisListener() {
         layout_diagnosis.setOnClickListener {

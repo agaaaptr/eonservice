@@ -57,7 +57,8 @@
             android:background="@drawable/button_shape"
             android:hint="Masukkan email"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
+            android:textSize="16sp"
+            android:padding="15dp"
             android:fontFamily="@font/poppinsregular"
             android:id="@+id/L_edt_email"/>
 
@@ -66,10 +67,11 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="57dp"
+            android:textSize="16sp"
             android:background="@drawable/button_shape"
             android:hint="Masukkan password"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:fontFamily="@font/poppinsregular"
             android:id="@+id/L_edt_password"/>
 
@@ -85,7 +87,7 @@
         android:background="@drawable/button_shape"
         android:width="300dp"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:id="@+id/L_btn_1"
         android:fontFamily="@font/poppinsbold"/>
 

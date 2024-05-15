@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="15dp"
         android:text="Service Perangkat"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/black" />
@@ -53,8 +53,9 @@
             android:layout_height="57dp"
             android:background="@drawable/form_shape"
             android:hint="Masukkan namamu"
+            android:textSize="16sp"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:fontFamily="@font/poppinsregular"
             android:id="@+id/form_name"/>
 
@@ -72,10 +73,11 @@
             android:layout_marginTop="2dp"
             android:layout_width="match_parent"
             android:layout_height="57dp"
+            android:textSize="16sp"
+            android:padding="15dp"
             android:background="@drawable/form_shape"
             android:hint="Apa merek laptopmu?"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
             android:fontFamily="@font/poppinsregular"
             android:id="@+id/form_brand"/>
 
@@ -93,10 +95,11 @@
             android:layout_marginTop="2dp"
             android:layout_width="match_parent"
             android:layout_height="57dp"
+            android:textSize="16sp"
             android:background="@drawable/form_shape"
             android:hint="Apa seri laptopmu?"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:fontFamily="@font/poppinsregular"
             android:id="@+id/form_series"/>
 
@@ -113,12 +116,13 @@
         <EditText
             android:layout_marginTop="2dp"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="115dp"
+            android:textSize="16sp"
+            android:padding="15dp"
             android:background="@drawable/form_shape"
-            android:hint="Beritahu kamu apa yang terjadi?"
+            android:hint="Beritahu kami apa yang terjadi?"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
-            android:paddingBottom="90dp"
+            android:gravity="top"
             android:fontFamily="@font/poppinsregular"
             android:id="@+id/form_problem"/>
         <TextView
@@ -134,11 +138,13 @@
         <EditText
             android:layout_marginTop="2dp"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
+            android:layout_height="80dp"
             android:background="@drawable/form_shape"
             android:hint="Masukkan hasil diagnosa awal"
             android:backgroundTint="@color/white"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
+            android:gravity="top"
+            android:textSize="16sp"
             android:fontFamily="@font/poppinsregular"
             android:id="@+id/form_hasilDiagnosa"/>
 
@@ -149,12 +155,13 @@
         android:layout_height="wrap_content"
         android:text="Kirim"
         android:textAllCaps="false"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/ly_1"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_shape"
         android:width="300dp"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:id="@+id/btn_order"
         android:fontFamily="@font/poppinsbold"/>
 

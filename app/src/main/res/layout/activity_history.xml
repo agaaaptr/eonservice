@@ -24,7 +24,7 @@
         android:paddingTop="15dp"
         android:text="Riwayat Transaksi"
         android:textColor="@color/black"
-        android:textSize="18dp" />
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
