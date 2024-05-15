@@ -20,9 +20,11 @@ class ServiceActivity : AppCompatActivity() {
     private lateinit var binding: ActivityServiceBinding
     private lateinit var database: DatabaseReference
     private lateinit var db: FirebaseDatabase
+    private lateinit var edtName: EditText
     private lateinit var edtBrand: EditText
     private lateinit var edtSeries: EditText
     private lateinit var edtProblem: EditText
+    private lateinit var edtDiagnosa: EditText
     private lateinit var btnOrder: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,9 +32,11 @@ class ServiceActivity : AppCompatActivity() {
         setContentView(R.layout.activity_service)
         supportActionBar?.hide()
 
+        edtName = findViewById(R.id.form_name)
         edtBrand = findViewById(R.id.form_brand)
         edtSeries = findViewById(R.id.form_series)
         edtProblem = findViewById(R.id.form_problem)
+        edtDiagnosa = findViewById(R.id.form_hasilDiagnosa)
         btnOrder = findViewById(R.id.btn_order)
 
         database = FirebaseDatabase.getInstance("https://eonservice-e3c94-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Transaction")
@@ -57,9 +61,17 @@ class ServiceActivity : AppCompatActivity() {
 
     private fun saveTransData() {
 
+        val nama = edtName.text.toString()
         val brand = edtBrand.text.toString()
         val problem = edtProblem.text.toString()
         val series = edtSeries.text.toString()
+        val diagnosa = edtDiagnosa.text.toString()
+
+        if (nama.isEmpty()){
+            edtName.error = "Mohon masukkan nama anda"
+            edtName.requestFocus()
+            return
+        }
 
         if (brand.isEmpty()){
             edtBrand.error = "Mohon masukkan merek laptop"
@@ -79,14 +91,22 @@ class ServiceActivity : AppCompatActivity() {
             return
         }
 
+        if (diagnosa.isEmpty()){
+            edtProblem.error = "Mohon beritahu hasil diagnosa awal"
+            edtProblem.requestFocus()
+            return
+        }
+
         val trId = database.push().key!!
 
-        val trans = TransactionModel(trId, brand, series, problem)
+        val trans = TransactionModel(nama, brand, series, problem, diagnosa)
         database.child(trId).setValue(trans).addOnSuccessListener {
 
+            edtName.text.clear()
             edtBrand.text.clear()
             edtSeries.text.clear()
             edtProblem.text.clear()
+            edtDiagnosa.text.clear()
         }
     }
 }

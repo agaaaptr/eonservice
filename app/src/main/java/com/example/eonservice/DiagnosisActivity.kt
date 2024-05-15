@@ -1,12 +1,18 @@
 package com.example.eonservice
 
+import android.annotation.SuppressLint
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_diagnosis.*
+
 
 class DiagnosisActivity : AppCompatActivity() {
 
@@ -15,7 +21,9 @@ class DiagnosisActivity : AppCompatActivity() {
     private lateinit var hardDiskInput: EditText
     private lateinit var diagnoseButton: Button
     private lateinit var resultTextView: TextView
+    private lateinit var copyButton: Button
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_diagnosis)
@@ -26,6 +34,7 @@ class DiagnosisActivity : AppCompatActivity() {
         hardDiskInput = findViewById(R.id.hard_disk_input)
         diagnoseButton = findViewById(R.id.diagnose_button)
         resultTextView = findViewById(R.id.result_text)
+        copyButton = findViewById(R.id.copyButton)
 
         diagnoseButton.setOnClickListener {
             val cpuText = cpuInput.text.toString()
@@ -33,7 +42,7 @@ class DiagnosisActivity : AppCompatActivity() {
             val hardDiskText = hardDiskInput.text.toString()
 
             if (cpuText.isEmpty() || ramText.isEmpty() || hardDiskText.isEmpty()) {
-                resultTextView.text = "Insert the value issues first"
+                resultTextView.text = "Masukkan nilai masalah!"
             } else {
                 val cpuValue = cpuText.toDouble()
                 val ramValue = ramText.toDouble()
@@ -42,8 +51,12 @@ class DiagnosisActivity : AppCompatActivity() {
                 val result = performDiagnosis(cpuValue, ramValue, hardDiskValue)
                 resultTextView.text = result
             }
+
         }
 
+        copyButton.setOnClickListener {
+            copyToClipboard(resultTextView.text.toString())
+        }
 
         btnBackListener()
 
@@ -76,5 +89,11 @@ class DiagnosisActivity : AppCompatActivity() {
     }
 
 
+    private fun copyToClipboard(text: String) {
+        val clipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        val clipData = ClipData.newPlainText("text", text)
+        clipboardManager.setPrimaryClip(clipData)
+        Toast.makeText(this, "Teks disalin", Toast.LENGTH_SHORT).show()
+    }
 
 }

@@ -24,9 +24,11 @@ class ListAdapter(private val historyList : ArrayList<TransactionModel>) : Recyc
 
         val currenItem = historyList[position]
 
-        holder.name.text = currenItem.brand
+        holder.nama.text = currenItem.nama
+        holder.brand.text = currenItem.brand
         holder.problem.text = currenItem.problem
-        holder.number.text = currenItem.series
+        holder.series.text = currenItem.series
+        holder.diagnosa.text = currenItem.diagnosa
 
     }
 
@@ -36,10 +38,11 @@ class ListAdapter(private val historyList : ArrayList<TransactionModel>) : Recyc
 
     class ListViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
-        val name : TextView = itemView.findViewById(R.id.txt_cv_name)
+        val nama : TextView = itemView.findViewById(R.id.txt_cv_name)
+        val brand : TextView = itemView.findViewById(R.id.txt_cv_brand)
         val problem : TextView = itemView.findViewById(R.id.txt_cv_problem)
-        val number : TextView = itemView.findViewById(R.id.txt_cv_number)
-
+        val series : TextView = itemView.findViewById(R.id.txt_cv_series)
+        val diagnosa : TextView = itemView.findViewById(R.id.txt_cv_diagnosa)
     }
 
 }
