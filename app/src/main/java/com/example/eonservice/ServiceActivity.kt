@@ -21,6 +21,7 @@ class ServiceActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private lateinit var db: FirebaseDatabase
     private lateinit var edtName: EditText
+    private lateinit var edtContact: EditText
     private lateinit var edtBrand: EditText
     private lateinit var edtSeries: EditText
     private lateinit var edtProblem: EditText
@@ -33,6 +34,7 @@ class ServiceActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         edtName = findViewById(R.id.form_name)
+        edtContact = findViewById(R.id.form_contact)
         edtBrand = findViewById(R.id.form_brand)
         edtSeries = findViewById(R.id.form_series)
         edtProblem = findViewById(R.id.form_problem)
@@ -62,6 +64,7 @@ class ServiceActivity : AppCompatActivity() {
     private fun saveTransData() {
 
         val nama = edtName.text.toString()
+        val contact = edtContact.text.toString()
         val brand = edtBrand.text.toString()
         val problem = edtProblem.text.toString()
         val series = edtSeries.text.toString()
@@ -69,6 +72,12 @@ class ServiceActivity : AppCompatActivity() {
 
         if (nama.isEmpty()){
             edtName.error = "Mohon masukkan nama anda"
+            edtName.requestFocus()
+            return
+        }
+
+        if (contact.isEmpty()){
+            edtName.error = "Mohon masukkan kontak WhatsApp"
             edtName.requestFocus()
             return
         }
@@ -99,10 +108,11 @@ class ServiceActivity : AppCompatActivity() {
 
         val trId = database.push().key!!
 
-        val trans = TransactionModel(nama, brand, series, problem, diagnosa)
+        val trans = TransactionModel(nama, contact, brand, series, problem, diagnosa)
         database.child(trId).setValue(trans).addOnSuccessListener {
 
             edtName.text.clear()
+            edtContact.text.clear()
             edtBrand.text.clear()
             edtSeries.text.clear()
             edtProblem.text.clear()

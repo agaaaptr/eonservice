@@ -22,147 +22,189 @@
         android:paddingTop="15dp"
         android:text="Service Perangkat"
         android:textSize="18sp"
+        android:id="@+id/tvService"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppinssemibold"
         android:textColor="@color/black" />
 
 
-    <LinearLayout
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        android:paddingTop="30dp"
-        android:paddingBottom="15dp"
-        android:id="@+id/ly_1">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_name"
-            android:paddingStart="3dp"
-            android:text="Atas Nama"
-            android:fontFamily="@font/poppinssemibold"
-            android:textSize="18sp"/>
-
-        <EditText
-            android:layout_marginTop="2dp"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:background="@drawable/form_shape"
-            android:hint="Masukkan namamu"
-            android:textSize="16sp"
-            android:backgroundTint="@color/white"
-            android:padding="15dp"
-            android:fontFamily="@font/poppinsregular"
-            android:id="@+id/form_name"/>
-
-        <TextView
-            android:paddingTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_brand"
-            android:paddingStart="3dp"
-            android:text="Brand"
-            android:fontFamily="@font/poppinssemibold"
-            android:textSize="18sp"/>
-
-        <EditText
-            android:layout_marginTop="2dp"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:textSize="16sp"
-            android:padding="15dp"
-            android:background="@drawable/form_shape"
-            android:hint="Apa merek laptopmu?"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/poppinsregular"
-            android:id="@+id/form_brand"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_series"
-            android:paddingTop="10dp"
-            android:paddingStart="3dp"
-            android:text="Series"
-            android:fontFamily="@font/poppinssemibold"
-            android:textSize="18sp"/>
-
-        <EditText
-            android:layout_marginTop="2dp"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:textSize="16sp"
-            android:background="@drawable/form_shape"
-            android:hint="Apa seri laptopmu?"
-            android:backgroundTint="@color/white"
-            android:padding="15dp"
-            android:fontFamily="@font/poppinsregular"
-            android:id="@+id/form_series"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_problem"
-            android:paddingTop="10dp"
-            android:paddingStart="3dp"
-            android:text="Masalah Perangkat"
-            android:fontFamily="@font/poppinssemibold"
-            android:textSize="18sp"/>
-
-        <EditText
-            android:layout_marginTop="2dp"
-            android:layout_width="match_parent"
-            android:layout_height="115dp"
-            android:textSize="16sp"
-            android:padding="15dp"
-            android:background="@drawable/form_shape"
-            android:hint="Beritahu kami apa yang terjadi?"
-            android:backgroundTint="@color/white"
-            android:gravity="top"
-            android:fontFamily="@font/poppinsregular"
-            android:id="@+id/form_problem"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txt_hasilDiagnosa"
-            android:paddingTop="10dp"
-            android:paddingStart="3dp"
-            android:text="Hasil Diagnosa"
-            android:fontFamily="@font/poppinssemibold"
-            android:textSize="18sp"/>
-
-        <EditText
-            android:layout_marginTop="2dp"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@drawable/form_shape"
-            android:hint="Masukkan hasil diagnosa awal"
-            android:backgroundTint="@color/white"
-            android:padding="15dp"
-            android:gravity="top"
-            android:textSize="16sp"
-            android:fontFamily="@font/poppinsregular"
-            android:id="@+id/form_hasilDiagnosa"/>
-
-    </LinearLayout>
-
-    <Button
+    <androidx.core.widget.NestedScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kirim"
-        android:textAllCaps="false"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/ly_1"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/button_shape"
-        android:width="300dp"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:id="@+id/btn_order"
-        android:fontFamily="@font/poppinsbold"/>
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/tvService"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+
+
+            <LinearLayout
+                android:id="@+id/ly_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:paddingStart="3dp"
+                    android:text="Atas Nama"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/form_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/form_shape"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="Masukkan namamu"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:text="Kontak WhatsApp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/form_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:inputType="number"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/form_shape"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="+628XXXXXXXXXXX"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:text="Brand"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/form_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/form_shape"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="Apa merek laptopmu?"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_series"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:text="Series"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/form_series"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/form_shape"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppinsregular"
+                    android:hint="Apa seri laptopmu?"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:text="Masalah Perangkat"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/form_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/form_shape"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="top"
+                    android:hint="Beritahu kami apa yang terjadi?"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_hasilDiagnosa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:paddingStart="3dp"
+                    android:paddingTop="10dp"
+                    android:text="Hasil Diagnosa"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/form_hasilDiagnosa"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/form_shape"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="top"
+                    android:hint="Masukkan hasil diagnosa awal"
+                    android:padding="15dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_order"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:width="300dp"
+                android:layout_below="@+id/ly_1"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Kirim"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
 
 </RelativeLayout>

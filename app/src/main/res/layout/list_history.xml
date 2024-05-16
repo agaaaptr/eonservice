@@ -37,6 +37,31 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/txt_cv_name_label" />
 
+        <!-- Contact -->
+        <TextView
+            android:id="@+id/txt_cv_contact_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Contact :"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_cv_name" />
+
+        <TextView
+            android:id="@+id/txt_cv_contact"
+            android:layout_width="0dp"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="+628XXXXXXXXXXX"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_cv_contact_label" />
+
+
         <!-- Brand -->
         <TextView
             android:id="@+id/txt_cv_brand_label"
@@ -48,7 +73,7 @@
             android:fontFamily="@font/poppinssemibold"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_cv_name" />
+            app:layout_constraintTop_toBottomOf="@id/txt_cv_contact" />
 
         <TextView
             android:id="@+id/txt_cv_brand"

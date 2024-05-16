@@ -25,6 +25,7 @@ class ListAdapter(private val historyList : ArrayList<TransactionModel>) : Recyc
         val currenItem = historyList[position]
 
         holder.nama.text = currenItem.nama
+        holder.contact.text = currenItem.contact
         holder.brand.text = currenItem.brand
         holder.problem.text = currenItem.problem
         holder.series.text = currenItem.series
@@ -39,6 +40,7 @@ class ListAdapter(private val historyList : ArrayList<TransactionModel>) : Recyc
     class ListViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
 
         val nama : TextView = itemView.findViewById(R.id.txt_cv_name)
+        val contact : TextView = itemView.findViewById(R.id.txt_cv_contact)
         val brand : TextView = itemView.findViewById(R.id.txt_cv_brand)
         val problem : TextView = itemView.findViewById(R.id.txt_cv_problem)
         val series : TextView = itemView.findViewById(R.id.txt_cv_series)
